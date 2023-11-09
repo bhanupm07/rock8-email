@@ -3,4 +3,7 @@
   flex-direction: column;
   gap: 1.6rem;
   width: 100%;
+  overflow: scroll;
+  height: 80rem;
+  overflow-x: hidden;
 }
