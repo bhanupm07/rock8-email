@@ -1,0 +1,50 @@
+.card-main {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  font-size: 1.2rem;
+  border: 0.1rem solid rgba(128, 128, 128, 0.363);
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  color: grey;
+  cursor: pointer;
+  background-color: #fff;
+  /* background-color: #f2f2f2; */
+}
+
+.opened-email {
+  border: 0.15rem solid #e54065;
+}
+
+.card-profile {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: #e54065;
+  color: white;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.bold-text {
+  color: rgb(92, 92, 92);
+  font-weight: 700;
+}
+
+.short-descp {
+  margin: 0.6rem 0;
+}
+
+.favorite {
+  color: #e54065;
+  font-weight: 600;
+  margin-left: 2.5rem;
+}

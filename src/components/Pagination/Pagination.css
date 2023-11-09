@@ -1,0 +1,19 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.pagination > button {
+  border: none;
+  color: white;
+  background-color: black;
+  padding: 1rem 1.5rem;
+  border-radius: 0.8rem;
+  font-size: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.pagination > button:active {
+  transform: scale(0.9);
+}

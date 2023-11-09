@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from "react";
+import EmailsList from "./components/EmailsList/EmailsList";
+import FilterButtons from "./components/FilterButtons/FilterButtons";
+import { Context } from "./context/emailContext";
+import EmailBody from "./components/EmailBody/EmailBody";
+import Pagination from "./components/Pagination/Pagination";
 
-function App() {
+export default function App() {
+  const { isBodyVisible, bodyContent } = useContext(Context);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <FilterButtons />
+      <div className="list-and-body">
+        <EmailsList />
+        {isBodyVisible && (
+          <EmailBody email={bodyContent[0]} body={bodyContent[1]} />
+        )}
+      </div>
+      <Pagination />
     </div>
   );
 }
-
-export default App;

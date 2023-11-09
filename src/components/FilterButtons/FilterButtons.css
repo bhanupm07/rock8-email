@@ -1,0 +1,20 @@
+.filter-div-main {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+
+.selected-filter-btn {
+  border: 0.05rem solid rgba(128, 128, 128, 0.461);
+  background-color: #e1e5ea;
+  border-radius: 1.5rem;
+  padding: 0.3rem 1.3rem;
+}
+
+.filter-btns {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.2rem 1rem;
+}
